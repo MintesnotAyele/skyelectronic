@@ -1,0 +1,241 @@
+<?php
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="access.css">
+
+</head>
+<body>
+<!--This is header for phone page products-->
+<div class="header">
+      
+  <div class="nav_inner"><a><h1>SKY ACCESSORIES</h1></a></div>
+
+  <div class="nav_inner">
+    <div class="linkss">
+     
+      <a href="phone.html" >Phones</a>
+      <a href="computer.html">Computers</a>
+      <a href="camera.html">cameras</a>
+      <a href="access.html">Accessories</a>
+      <a href="tv.html">TV</a>
+    </div>
+  </div>
+</div>
+
+<!--This is header for body one-->
+      <div class="cont">
+ 
+        <div class="body1">
+          <h2>SKY ELECTRONICS <br> STORE</h2>
+        </div>
+      
+
+
+  <div class="all">
+    <div class="display"></div>
+    <div class="container" id="phones">
+      <div class="menubar">
+        <span>ACCESSORIES</span>
+      </div>
+
+<!--This is END OF header for camera  page -->
+      
+      <div class="body">
+        <div class="collection">
+          <div class="item">
+            <div class="inner">
+              <div class="photo">
+                <a href="#"><img class="image" src="imageforproject/keyboard3.png" alt=""></a>
+              </div>
+              <div class="discription">
+                <h3 class="title">1</h3>
+                <h3 class="dis">Available in store</h3>
+                <h3 class="dis">Price : .... ETB</h3>
+             
+                <h3 class="orderbox"><a href="login.php" role="button" class="orderbutton">Order now</a> </h3>
+              
+               
+               
+              </div>
+            </div>
+          </div><div class="item">
+            <div class="inner">
+              <div class="photo">
+                <a href="#"><img class="image" src="imageforproject/accesskeyboard.png" alt=""></a>
+              </div>
+              <div class="discription">
+                <h3 class="title">2</h3>
+                <h3 class="dis">Available in store</h3>
+                <h3 class="dis">Price : ,,,, ETB</h3>
+
+
+               
+                <h3 class="orderbox"><a href="login.php" role="button" class="orderbutton">Order now</a> </h3>
+          
+            
+                
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="inner">
+              <div class="photo">
+                <a href="#"><img class="image" src="imageforproject/mouse2.png" alt=""></a>
+              </div>
+              <div class="discription">
+                <h3 class="title">3</h3>
+                <h3 class="dis">Available in store</h3>
+                <h3 class="dis">Price :,,,,ETB</h3>
+           
+                <h3 class="orderbox"><a href="login.php" role="button" class="orderbutton">Order now</a> </h3>
+                
+                
+                 
+                  
+               
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="inner">
+              <div class="photo">
+                <a href="#"><img class="image" src="imageforproject/mouse3.png" alt=""></a>
+              </div>
+              <div class="discription">
+                <h3 class="title">4</h3>
+                <h3 class="dis">Available in store</h3>
+                <h3 class="dis">Price : ,,,,,ETB</h3>
+            
+                <h3 class="orderbox"><a href="login.php" role="button" class="orderbutton">Order now</a> </h3>
+          
+          
+             
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection">
+          <div class="item">
+            <div class="inner">
+              <div class="photo">
+                <a href="#"><img class="image" src="imageforproject/access1.png" alt=""></a>
+              </div>
+              <div class="discription">
+                <h3 class="title">5</h3>
+                <h3 class="dis">Available in store</h3>
+                <h3 class="dis">Price : ,,,,,, ETB</h3>
+              
+                <h3 class="orderbox"><a href="login.php" role="button" class="orderbutton">Order now</a> </h3>
+            
+              
+      
+                
+               
+         
+              </div>
+            </div>
+          </div><div class="item">
+            <div class="inner">
+              <div class="photo">
+                <a href="#"><img class="image" src="imageforproject/ram.png" alt=""></a>
+              </div>
+              <div class="discription">
+                <h3 class="title">6</h3>
+                <h3 class="dis">Available in store</h3>
+                <h3 class="dis">Price : ,,,,,, ETB</h3>
+           
+                <h3 class="orderbox"><a href="login.php" role="button" class="orderbutton">Order now</a> </h3>
+                
+            
+             
+                
+                
+                    
+              
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="inner">
+              <div class="photo">
+                <a href="#"><img class="image" src="imageforproject/harddisk1.png" alt=""></a>
+              </div>
+              <div class="discription">
+                <h3 class="title">,,,,,7</h3>
+                <h3 class="dis">Available in store</h3>
+                <h3 class="dis">Price : ,,,,,, ETB</h3>
+         
+                <h3 class="orderbox"><a href="login.php" role="button" class="orderbutton">Order now</a> </h3>
+            
+                
+      
+            
+                     
+                
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="inner">
+              <div class="photo">
+                <a href="#"><img class="image" src="imageforproject/harddisk2.webp" alt=""></a>
+              </div>
+              <div class="discription">
+                <!-- <h3 class="title">Samsung S-10 light</h3> -->
+                <h3 class="title">8</h3>
+                <h3 class="dis">Available in store</h3>
+                <h3 class="dis">Price :,,,,,, ETB</h3>
+           
+                <h3 class="orderbox"><a href="login.php" role="button" class="orderbutton">Order now</a> </h3>
+              
+               
+               
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--thi is for footer-->
+<footer class="footer">
+  <div class="containeer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra consectetur magna in tincidunt.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul class="contact-list">
+          <li>Email: info@example.com</li>
+          <li>Phone: +1 123 456 7890</li>
+          <li>Address: 123 Street, City, Country</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
+

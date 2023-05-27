@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    background: #d8d8d8;
+  }
+  .all{
+    background-image: linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)), url(imageforproject/logo1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    border-bottom: 50px solid grey;
+  }
+  .menubar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menubar span{
+    color: #fff;
+    font-size: 25px;
+  }
+  .body{
+    width: 100%;
+    min-height: 100vh;
+  }
+  .collection{
+    width: 94%;
+    margin-left: 3%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  .item{
+    width: 301px;
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+    border-radius: 10px;
+    border: #4e7de4 1px solid;
+  }
+  .inner{
+    width: 270px;
+    height: 95%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .photo{
+    background-color: white;
+    width: 280px;
+    aspect-ratio: 1.5/1;
+    position: relative;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+  }
+  .image:hover{
+    cursor: default;
+  }
+  
+  .discription{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    bottom: -20px;
+  }
+  .title{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #a5a5a5;
+  }
+  .title,.dis:hover{
+    cursor: default;
+  }
+  .dis{
+    margin: 5px;
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+  }
+  .orderbox{
+    text-align: center;
+    margin-top: 15px;
+  }
+  .order{
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #000;
+    background:  #284563;
+    padding: 10px 20px;
+    color: #000;
+    transition: .5s ease;
+  }
+  .order:hover{
+    background: transparent;
+    border: 1px solid #0aa149;
+    color: #a5a5a5;
+  }
+  
+  
+  .display{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+  
+  }
+
+  /* header css */
+  
+  /* this  for header */
+   /* this  for header */
+   .header{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   background-color: rgb(22, 71, 110);
+  }
+  .nav_inner{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+  }
+  .linkss{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    word-spacing: 40px;
+    
+  }
+  i{
+    color: #fcfafa;
+    font-size: 25px;
+  }
+  .nav_inner input{
+    background: transparent;
+    width: 80%;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 5px;
+  }
+  .nav_inner h1{
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 30px;
+  }
+  .nav_inner a{
+    font-size: 25px;
+    text-decoration: none;
+    color:white;
+  }
+  .linkss a{
+    font-size: 18px;
+    color: rgb(211, 219, 224);
+    transition: .1s;
+   
+  }
+  .linkss a:hover{
+    font-size: 22px;
+    text-decoration: none;
+    
+  }  
+  
+
+ /* production  part*/
+  .body1{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("imageforproject/phone6.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .body1 h2{
+    color: #fff;
+    font-size: 80px;
+    position: relative;
+    margin-left: 50px;
+  }
+   /* this  for footer */
+
+   
+.footer {
+  background-color: #050c2b;
+  padding: 20px 0;
+  color: #e3ecf0;
+  height: 350px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-column {
+  flex: 0 0 30%;
+  margin-bottom: 30px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.contact-list li {
+  margin-bottom: 5px;
+}
+
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+.social-icons a {
+  color: #888;
+  font-size: 20px;
+}
+
+
+.social-icons a:hover {
+  color: #555;
+}
+.containeer {
+  max-width: 3000px;
+  margin: 0;
+  padding: 20px;
+}
