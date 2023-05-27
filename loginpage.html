@@ -10,64 +10,33 @@
 
 </head>
 <body>
-  <!-- <script defer src="validation/validate.js"></script>  --> 
-    <div class="login&signup">
-
-
-        <form id="form" action="signup.php" method="post">
-            <label for="chk" area-hidden="true">signup</label>
-
-            <div class="input-control">
-            <input  id="username" type="text" name="username" placeholder="user_name">
-            <div class="error"></div>
-            </div>
-
-
-            <div class="input-control">
-            <input id="email" type="email" name="email" placeholder="Email">
-            <div class="error"></div>
-        </div>
-
-        <div class="input-control">
-            <input id="password"  type="password" name="password" placeholder="Password">
-             <div class="error"></div>
-            </div>
-
-            <div class="input-control">
-            <input id="password2" type="password" name="password2" placeholder="confirm password">
-            <div class="error"></div>
-        </div>
+    <div class="example">
+    
+    <div class="main">
+        <input type="checkbox" id="chk" area-hidden="true">
+        <div class="signup">
+           
+            <form action="signup.php" method="post">
+                <label for="chk" area-hidden="true">signup</label>
+                <input type="text" name="username" placeholder="user_name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
 <button>signup</button>
             </form>
 
         </div>
         <div class="login">
-        
-        <form action="login.php" method="Post">
-            
 
+        <form action="login.php" method="post">
+            
             <label for="chk" aria-hidden="true">login</label>
-            
-            
-            
-            <input id="email" type="email" name="email" placeholder="Email">
-        
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="psw" placeholder="Password" required>
+            <button>login</button>
 
-          
-            <input id="password"  type="password" name="password" placeholder="Password">
-            
-
-
-         
-            <input id="password2" type="password" name="password2" placeholder="confirm password">
-          
-
-            <button >login</button>
-          
         </form>
     </div>
     </div>
 </div>
-
 </body>
 </html>
