@@ -1,4 +1,6 @@
-
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,9 +60,15 @@
                 <h3 class="dis">Available in store</h3>
                 <h3 class="dis">Price : 66500 ETB</h3>
                 <P class="dis"> 128GB, Deep Purple -<br> Unlocked (Renewed Premium)</P>
+                <?php if(!isset($_SESSION['email'])){  ?>
                 <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
-              
-               
+                <?php
+              }else {
+                ?>
+                  <h3 class="orderbox"><a href="cart_add.php?id=1" class="order" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a></h3>
+                <?php
+              }
+              ?> 
                
               </div>
             </div>
@@ -74,11 +82,16 @@
                 <h3 class="dis">Available in store</h3>
                 <h4 class="dis"> Waterproof Drop Protective Case, <br>Fre Series,Golden</h4>
                 <h3 class="dis">Price : 45000 ETB</h3>
-
-
-               
+                <?php if(!isset($_SESSION['email'])){  ?>
                 <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
-          
+                <?php
+              }
+              else {
+                ?>
+ <h3 class="orderbox"><a href="cart_add.php?id=2" class="order" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a></h3>
+                    <?php
+                  }
+                ?>
             
                 
               </div>
@@ -94,12 +107,16 @@
                 <h3 class="dis">Available in store</h3>
                 <h3 class="dis">256GB, Space Golden<br> - Unlocked (Renewed)</h3>
                 <h3 class="dis">Price : 30000 ETB</h3>
-           
-                <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
-                
-                
-                 
-                  
+                <?php if(!isset($_SESSION['email'])){  ?>
+                  <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
+                  <?php
+                }
+                else {
+                  ?>
+   <h3 class="orderbox"><a href="cart_add.php?id=3" class="order" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a></h3>
+                      <?php
+                    }
+                  ?>    
                
               </div>
             </div>
@@ -115,8 +132,16 @@
                 <h3 class="dis"> 128GB, Pacific Blue - <br>Unlocked (Renewed Premium)</h3>
                 <h3 class="dis">Price : 11500 ETB</h3>
             
-                <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
-          
+                <?php if(!isset($_SESSION['email'])){  ?>
+                  <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
+                  <?php
+                }
+                else {
+                  ?>
+   <h3 class="orderbox"><a href="cart_add.php?id=4" class="order" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a></h3>
+                      <?php
+                    }
+                  ?>          
           
              
                
@@ -137,13 +162,16 @@
                   <br>US Version, 2023, Phantom Black</h3>
                 <h3 class="dis">Price : 60000 ETB</h3>
               
-                <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
-            
-              
-      
-                
-               
-         
+                <?php if(!isset($_SESSION['email'])){  ?>
+                  <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
+                  <?php
+                }
+                else {
+                  ?>
+   <h3 class="orderbox"><a href="cart_add.php?id=5" class="order" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a></h3>
+                      <?php
+                    }
+                  ?>            
               </div>
             </div>
           </div><div class="item">
@@ -156,14 +184,16 @@
                 <h3 class="dis">Available in store</h3>
                 <h3 class="dis">Price : 55000 ETB</h3>
            
-                <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
-                
-            
-             
-                
-                
-                    
-              
+                <?php if(!isset($_SESSION['email'])){  ?>
+                  <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
+                  <?php
+                }
+                else {
+                  ?>
+   <h3 class="orderbox"><a href="cart_add.php?id=6" class="order" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a></h3>
+                      <?php
+                    }
+                  ?>                
               </div>
             </div>
           </div>
@@ -177,13 +207,16 @@
                 <h3 class="dis">Available in store</h3>
                 <h3 class="dis">Price : 45000 ETB</h3>
          
-                <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
-            
-                
-      
-            
-                     
-                
+                <?php if(!isset($_SESSION['email'])){  ?>
+                  <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
+                  <?php
+                }
+                else {
+                  ?>
+   <h3 class="orderbox"><a href="cart_add.php?id=7" class="order" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a></h3>
+                      <?php
+                    }
+                  ?>      
               </div>
             </div>
           </div>
@@ -197,13 +230,16 @@
                 <h3 class="title">Z-Fold3galaxy</h3>
                 <h3 class="dis">Available in store</h3>
                 <h3 class="dis">Price :54000 ETB</h3>
-           
-                <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
-              
-               
-               
-                
-                
+                <?php if(!isset($_SESSION['email'])){  ?>
+                  <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>
+                  <?php
+                }
+                else {
+                  ?>
+   <h3 class="orderbox"><a href="cart_add.php?id=8" class="order" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a></h3>
+                      <?php
+                    }
+                  ?>              
               </div>
             </div>
           </div>

@@ -1,26 +1,16 @@
 <?php
-$servername="localhost";
-$username="root";
-$password="";
-$dnname="project";
-$conn=new mysqli($servername,$username,$password,$dnname);
-if($conn->connect_error){
-die("connection failed:".$conn->connect_error);
-
-}
-echo"connected succesfully";
-echo"<br>";
+include_once('conn.php');
+session_start();
+$username=$_POST['username'];
+$password=$_POST['password'];
+$email= $_POST['email'];
 if(isset($_POST['signup'])){
-    $username=$_POST['username'];
-    $password=$_POST['password'];
-    $email=$_POST['email'];
-
-$sql="insert into user(id,
-username ,
-password ,
-email)values(1,'$username','$password','$email')
+$sql="insert into users(
+username,
+ email,password
+)values('$username','$email','$password')
 ";
-if($conn->query($sql)===TRUE){
+if(mysqli_query($conn, $sql)){
 echo"inserted  successfully";
 }
 else

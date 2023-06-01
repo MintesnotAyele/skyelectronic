@@ -26,7 +26,7 @@
 
         <div class="nav_inner">
           <div class="linkss">
-            <a href="phone.html" >Phones</a>
+            <a href="phone.php" >Phones</a>
             <a href="computer.html">Computers</a>
             <a href="camera.html">cameras</a>
             <a href="access.html">Accessories</a>
@@ -35,9 +35,18 @@
         </div>
         
         <div class="nav_inner">
-            
-                <a href ="loginpage.html"  class="glyphicon glyphicon-log-in">Login/signup</a>	
-               		 
+          <?php
+          if (isset($_SESSION['email'])) {
+            ?>
+            <a href="logout.php">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
+            <a href="cart1.php">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+          <?php	
+            	} else {
+                ?>
+                <a href ="loginpage.html"  class="glyphicon glyphicon-log-in">Login/signup</a>
+              <?php
+              }
+            ?>   		 
         </div>
       </div>
 
@@ -59,7 +68,7 @@
           <span>Computers</span>
         </div>
         <div class="options">
-          <a><img src="imageforproject/iphone13.png"></a>
+          <a><img s     rc="imageforproject/iphone13.png"></a>
           <span>Smart phones</span>
         </div>
         <div class="options">
