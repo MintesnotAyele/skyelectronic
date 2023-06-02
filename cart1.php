@@ -26,9 +26,58 @@ else {
 	<title>cart</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/head1.css">
-	<link rel="stylesheet" href="css/carts.css">
-  <link rel="stylesheet" href="fonts-web/css/all.css">
+	<style>
+		body {
+			background-color: #f7a7f7;
+		}
+
+		.container {
+			background-color: #fff;
+			max-width: 800px;
+			margin: 50px auto;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		th {
+			background-color: #333;
+			color: #fff;
+			font-weight: bold;
+			padding: 10px;
+			text-align: center;
+		}
+
+		td {
+			padding: 10px;
+			text-align: center;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			background-color: #333;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 18px;
+			transition: background-color 0.3s ease;
+		}
+
+		a:hover {
+			background-color: #555;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -59,7 +108,7 @@ else {
 							<th>
 								<?php echo $row['price'] ?>
 							</th>
-							<th><a href='remove.php?id=<?php echo $row['id'] ?>'>Remove</a></th>
+							<th><a href='remove1.php?id=<?php echo $row['id'] ?>'>Remove</a></th>
 						</tr>
 						<?php $counter = $counter + 1;
 					} ?>
@@ -70,7 +119,7 @@ else {
 							<?php echo $sum; ?> ETB
 						</th>
 						<!-- <th><a href="success.php?id=<?php echo $user_id ?>" class="btn btn-primary">Confirm Order</a></th> -->
-						<th><a href="cart_check.php">Confirm Order</a></th>
+						<th><a href="order.php">Confirm Order</a></th>
 					</tr>
 				</tbody>
 			</table>

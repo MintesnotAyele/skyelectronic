@@ -1,6 +1,6 @@
 <?php
 include_once('conn.php');
-$query="select *from product1";
+$query="select *from `order`";
 $result = $conn->query($query);
 ?>
 <!DOCTYPE html>
@@ -11,25 +11,23 @@ $result = $conn->query($query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="product.css">
     <title>Document</title>
-   
 </head>
 <body>
    
 <table  align"center" border="1px" styles="width:600px; line-height:40px;">
-<tr><th colspan="3"><h1>PRODUCTS TABLE</h1></th></tr>
+<tr><th colspan="2"><h1>order TABLE</h1></th></tr>
 <t>
-  <th>ID</th>
-  <th>MODEL</th>
-  <th>QUANTITY</th>
+  <th>USER_ID</th>
+  <th>ITEM_ID</th>
 </t>
 <?php
 while($rows = $result->fetch_assoc())
 {
 ?>
 <tr>
-  <td><?php echo $rows['pid'];?> </td>
-  <td><?php echo $rows['model'];?> </td>
-  <td><?php echo $rows['numberofitem'];?> </td>
+  <td><?php echo $rows['user_id'];?> </td>
+  <td><?php echo $rows['item_id'];?> </td>
+ <td> <a href="remove.php?user_id=<?php echo $rows['user_id'];?>&item_id=<?php echo $rows['item_id'];?>">Remove</a></td>
 </tr>
 <?php
 }

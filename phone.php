@@ -21,14 +21,27 @@
   <div class="nav_inner">
     <div class="linkss">
      
-      <a href="phone.html" >Phones</a>
+      <a href="phone.php" >Phones</a>
       <a href="computer.html">Computers</a>
       <a href="camera.html">cameras</a>
       <a href="access.html">Accessories</a>
       <a href="tv.html">TV</a>
     </div>
   </div>
-  
+  <div class="nav_inner">
+          <?php
+          if (isset($_SESSION['email'])) {
+            ?>
+            <a href="logout.php">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
+            <a href="cart1.php">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+          <?php	
+            	} else {
+                ?>
+                <a href ="loginpage.html"  class="glyphicon glyphicon-log-in">Login/signup</a>
+              <?php
+              }
+            ?>   		 
+        </div>
   
 </div>
 
@@ -182,7 +195,7 @@
               <div class="discription">
                 <h3 class="title">Samsung S-10</h3>
                 <h3 class="dis">Available in store</h3>
-                <h3 class="dis">Price : 55000 ETB</h3>
+                <h3 class="dis">Price : 15500 ETB</h3>
            
                 <?php if(!isset($_SESSION['email'])){  ?>
                   <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>

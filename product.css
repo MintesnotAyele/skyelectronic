@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  table {
+    width: 600px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  td {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+  }
