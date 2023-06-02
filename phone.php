@@ -22,10 +22,10 @@
     <div class="linkss">
      
       <a href="phone.php" >Phones</a>
-      <a href="computer.html">Computers</a>
-      <a href="camera.html">cameras</a>
+      <a href="computer.php">Computers</a>
+      <a href="camera.php">cameras</a>
       <a href="access.html">Accessories</a>
-      <a href="tv.html">TV</a>
+      <a href="tv.php">TV</a>
     </div>
   </div>
   <div class="nav_inner">
@@ -218,7 +218,7 @@
               <div class="discription">
                 <h3 class="title">Samsung S-21</h3>
                 <h3 class="dis">Available in store</h3>
-                <h3 class="dis">Price : 45000 ETB</h3>
+                <h3 class="dis">Price : 100,000 ETB</h3>
          
                 <?php if(!isset($_SESSION['email'])){  ?>
                   <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>

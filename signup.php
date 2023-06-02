@@ -12,6 +12,7 @@ username,
 ";
 if(mysqli_query($conn, $sql)){
 echo"inserted  successfully";
+header('location:home.html');
 }
 else
 {

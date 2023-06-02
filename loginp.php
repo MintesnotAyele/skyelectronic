@@ -1,7 +1,9 @@
 <?php
 session_start();
 include_once('conn.php');
+echo"mnte";
 if(isset($_POST['loggin'])){
+  echo"kanu";
     //$username=$_POST['username'];
     $email= mysqli_real_escape_string($conn,$_POST['email']);
       $password=$_POST['psw'];

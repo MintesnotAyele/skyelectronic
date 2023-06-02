@@ -34,6 +34,7 @@ while($rows = $result->fetch_assoc())
 <?php
 }
 ?>
+<a href="addprod.html">Add_product</a>
   </table> 
 </body>
 </html>
