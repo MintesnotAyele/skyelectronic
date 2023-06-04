@@ -1,7 +1,8 @@
 <?php
 include_once('conn.php');
-$query="select *from `order`";
-$result = $conn->query($query);
+$orr="select *from `order`";
+$sql="select users.email, product1.id, `order`.user_id from `order` inner join  users on  `order`.user_id=users.id inner join product1 on `order`.item_id=product1.id";
+$result = $conn->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,17 +18,17 @@ $result = $conn->query($query);
 <table  align"center" border="1px" styles="width:600px; line-height:40px;">
 <tr><th colspan="2"><h1>order TABLE</h1></th></tr>
 <t>
-  <th>USER_ID</th>
+  <th>USER_EMAIL</th>
   <th>ITEM_ID</th>
 </t>
 <?php
-while($rows = $result->fetch_assoc())
+while($row = $result->fetch_assoc())
 {
 ?>
 <tr>
-  <td><?php echo $rows['user_id'];?> </td>
-  <td><?php echo $rows['item_id'];?> </td>
- <td> <a href="remove.php?user_id=<?php echo $rows['user_id'];?>&item_id=<?php echo $rows['item_id'];?>">Remove</a></td>
+  <td><?php echo $row['email'];?> </td>
+  <td><?php echo $row['id'];?> </td>
+ <td> <a href="remove.php?user_id=<?php echo $row['user_id'];?>&item_id=<?php echo $row['id'];?>">Remove</a></td>
 </tr>
 <?php
 }

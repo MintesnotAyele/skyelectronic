@@ -10,6 +10,47 @@
   <title>Products</title>
   <link rel="stylesheet" href="phone.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
 
 </head>
 <body>
@@ -29,20 +70,17 @@
     </div>
   </div>
   <div class="nav_inner">
-          <?php
-          if (isset($_SESSION['email'])) {
-            ?>
-            <a href="logout.php">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
-            <a href="cart1.php">Cart <i class="fa-solid fa-cart-shopping"></i></a>
-          <?php	
-            	} else {
-                ?>
-                <a href ="loginpage.html"  class="glyphicon glyphicon-log-in">Login/signup</a>
-              <?php
-              }
-            ?>   		 
+              		 
         </div>
-  
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="home.html">Home</a>
+          <a href="logout.php">Logout</a>
+          <a href="cart1.php">Cart</a>
+          <a href="#foot">About Us</a>
+          <a href="#foot">Contact Us</a>
+        </div> 
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 </div>
 
       <!--This is for first body-->
@@ -261,7 +299,7 @@
     </div>
 
    <!--thi is for footer-->
-   <footer class="footer">
+   <footer id="foot"  class="footer">
     <div class="containeer">
       <div class="footer-content">
         <div class="footer-column">
@@ -287,6 +325,15 @@
       </div>
     </div>
   </footer>
+  <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 
   </body>
 

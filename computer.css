@@ -94,13 +94,13 @@
     margin: 5px;
     color: white;
     font-weight: 200;
-    font-size: 15px;
+    font-size: 12px;
   }
   .orderbox{
     text-align: center;
     margin-top: 15px;
   }
-  .orderbutton{
+  .order{
     border-radius: 5px;
     text-decoration: none;
     border: 1px solid #000;
@@ -109,7 +109,7 @@
     color: #000;
     transition: .5s ease;
   }
-  .orderbutton:hover{
+  .order:hover{
     background: transparent;
     border: 1px solid #4cbd0c;
     color: #a5a5a5;
