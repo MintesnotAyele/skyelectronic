@@ -94,7 +94,7 @@
     margin: 5px;
     color: white;
     font-weight: 200;
-    font-size: 15px;
+    font-size: 12px;
   }
   .orderbox{
     text-align: center;
@@ -104,7 +104,7 @@
     border-radius: 5px;
     text-decoration: none;
     border: 1px solid #000;
-    background: #284563;
+    background: #3979bd;
     padding: 10px 20px;
     color: #000;
     transition: .5s ease;

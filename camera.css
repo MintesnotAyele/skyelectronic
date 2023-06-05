@@ -100,11 +100,11 @@
     text-align: center;
     margin-top: 15px;
   }
-  .orderbutton{
+  .order{
     border-radius: 5px;
     text-decoration: none;
     border: 1px solid #000;
-    background: #284563;
+    background: #3872b1;
     padding: 10px 20px;
     color: #000;
     transition: .5s ease;
@@ -112,7 +112,7 @@
 
   }
   
-  .orderbutton:hover{
+  .order:hover{
     background: transparent;
     border: 1px solid #08bd18;
     color: #a5a5a5;
@@ -195,9 +195,10 @@
 .body1{
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("imageforproject/hot2.webp");
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("imageforproject/boycam.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
   display: flex;
   align-items: center;

@@ -24,7 +24,7 @@ if ($result->num_rows > 0) {
     }
     // Execute the DELETE query to remove the rows from the cart_order table
     if ($conn->query($delete) === TRUE) {
-         echo "Rows deleted successfully";
+        //echo "Rows deleted successfully";
          header('location: home.html');
     } else {
         echo "Error deleting rows: " . $conn->error;

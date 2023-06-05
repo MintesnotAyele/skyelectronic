@@ -10,6 +10,10 @@
   <title>Products</title>
   <link rel="stylesheet" href="phone.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  >
   <style>
 .sidenav {
   height: 100%;
@@ -17,7 +21,7 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
@@ -65,7 +69,7 @@
       <a href="phone.php" >Phones</a>
       <a href="computer.php">Computers</a>
       <a href="camera.php">cameras</a>
-      <a href="access.html">Accessories</a>
+      <a href="access.php">Accessories</a>
       <a href="tv.php">TV</a>
     </div>
   </div>
@@ -74,13 +78,13 @@
         </div>
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="home.html">Home</a>
-          <a href="logout.php">Logout</a>
-          <a href="cart1.php">Cart</a>
-          <a href="#foot">About Us</a>
-          <a href="#foot">Contact Us</a>
+          <a href="home.html"><i class="fa fa-home" style="font-size:36px ;color:aliceblue;margin-left: 10px;"></i>Home</a>
+          <a href="logout.php"> <i class="fa fa-sign-out" style="font-size:36px;color:rgb(230, 223, 223)"></i>Logout</a>
+          <a href="cart1.php"><i class="fa fa-shopping-cart" style="font-size:36px;color:rgb(240, 235, 235)"></i>Cart</a>
+          <a href="#foot"><i class="fa fa-at" style="font-size:36px;color:aliceblue;"></i>About Us</a>
+          <a href="#foot"> <i class="fa fa-address-book" style="font-size:36px;color:aliceblue;margin-left: 20px;"></i>Contact Us</a>
         </div> 
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
 </div>
 
       <!--This is for first body-->
@@ -233,6 +237,8 @@
               <div class="discription">
                 <h3 class="title">Samsung S-10</h3>
                 <h3 class="dis">Available in store</h3>
+                <h3 class="dis">256GB Storage, 200MP Camera,Long Battery Life,
+                  <br>US Version, 2023, Phantom Black</h3>
                 <h3 class="dis">Price : 15500 ETB</h3>
            
                 <?php if(!isset($_SESSION['email'])){  ?>
@@ -256,6 +262,8 @@
               <div class="discription">
                 <h3 class="title">Samsung S-21</h3>
                 <h3 class="dis">Available in store</h3>
+                <h3 class="dis">128GB Storage, 200MP Camera,Long Battery Life,
+                  <br>US Version, 2023, Phantom Black</h3>
                 <h3 class="dis">Price : 100,000 ETB</h3>
          
                 <?php if(!isset($_SESSION['email'])){  ?>
@@ -280,6 +288,8 @@
                 <!-- <h3 class="title">Samsung S-10 light</h3> -->
                 <h3 class="title">Z-Fold3galaxy</h3>
                 <h3 class="dis">Available in store</h3>
+                 <h3 class="dis">256GB Storage, 200MP Camera,Long Battery Life,
+                  <br>US Version, 2023, Phantom Black</h3>
                 <h3 class="dis">Price :54000 ETB</h3>
                 <?php if(!isset($_SESSION['email'])){  ?>
                   <h3 class="orderbox"><a href="loginpage.html" role="button" class="order">Order now</a> </h3>

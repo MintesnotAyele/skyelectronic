@@ -8,8 +8,8 @@ $price=$_POST['total_price'];
 if(isset($_POST['submit'])){
 $sql="insert into product1(
 id,
- pid,model,price
-)values('$item','$menu','$model','$price')
+ pid,model,price,numberofitem
+)values('$item','$menu','$model','$price',5)
 ";
 if(mysqli_query($conn, $sql)){
     header('location:product.php');  
